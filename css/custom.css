@@ -4,13 +4,16 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.bg-light{
-	background-color: #fff !important;
+.lawrencium {
+	background: #0f0c29;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.bg-dark {
-	background-color: #000 !important;
+.gradient-text {
+	background:-webkit-linear-gradient(right, #ff416c 12%, #ff4b2b 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 .custom-navbar {
 	background-color: #fff !important;
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
@@ -36,7 +39,7 @@ body {
 	color: #fff;
 }
 
-.parallax {
+.head {
 	background: url("../images/praveen.jpg");
 	/*filter: grayscale(100%);*/
 	height: 100%;
@@ -50,20 +53,20 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-	.parallax {
+	.head {
 		min-height: 360px;
 	}
 }
 
 .section-title {
-	font-size: calc(20px + (60-20)*((100vw - 300px)/(1024-300)));
+	font-size: calc(30px + (60-30)*((100vw - 300px)/(1024-300)));
 }
 .section-body {
 	font-size: calc(12px + (16-12)*((100vw - 300px)/(1024-300)));
 }
 
 
-.parallax .section-title {
+.head .section-title {
 	position: absolute;
 	top: 20%;
 	left: 30px;
@@ -74,10 +77,9 @@ body {
 	transition: background-position ease 0.5s;
 }
 
-.parallax .section-body {
+.head .section-body {
 	position: absolute;
 	letter-spacing: 5px;
-	color: #fff;
 }
 
 @media screen and (min-width: 760px)
@@ -95,8 +97,38 @@ body {
 }
 
 .about-section .section-title {
-	color: #4e58e7;
+	color: #3264f5;
 }
 .skill-section .section-title {
 	color: #f6ba28;
+}
+
+.skill-section {
+	background: url("../images/Amin.jpg");
+	/*filter: grayscale(100%);*/
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.project-section .section-title{
+	color:#1c7059;
+}
+.card {
+	border-radius: 12px;
+	overflow: hidden;
+	color: #425066 !important;
+	width: 100%;
+}
+
+.card:hover {
+	background:-webkit-linear-gradient(right, #ff416c, #ff4b2b);
+	color: #fff !important;
+}
+
+.progress-bar {
+	background:-webkit-linear-gradient(right, #ff416c, #ff4b2b);
 }
