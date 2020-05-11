@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.custom-navbar {
+	background-color: #fff !important;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .navbar-nav>.nav-item>.nav-link {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-left: 20px;
+	padding-right: 20px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	background-image: linear-gradient(to right, transparent 50%, #00c6ff 50%);
+	background-size: 200% 100%;
+	transition: background-position ease .5s;
+}
+
+.custom-navbar .navbar-nav>.nav-item>.nav-link:hover {
+	background-position: -100% 0;
+	color: #fff;
+}
+
+.parallax {
+	background: url("../images/praveen.jpg");
+	/*filter: grayscale(100%);*/
+	height: 100%;
+	min-height: 650px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+@media screen and (max-width: 700px) {
+	.parallax {
+		min-height: 360px;
+	}
+}
+
+.section-title {
+	font-size: calc(20px + (60-20)*((100vw - 300px)/(1024-300)));
+}
+.section-body {
+	font-size: calc(12px + (16-12)*((100vw - 300px)/(1024-300)));
+}
+
+.parallax .section-title {
+	position: absolute;
+	top: 20%;
+	left: 30px;
+	letter-spacing: 5px;
+	color: #fff;
+	background-image: linear-gradient(to right, transparent 50%, #fff 50%);
+	background-size: 200% 100%;
+	transition: background-position ease 0.5s;
+}
+
+.parallax .section-body {
+	position: absolute;
+	letter-spacing: 5px;
+	color: #fff;
+}
+
+.about-section
+{
+
+}
