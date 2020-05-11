@@ -93,3 +93,10 @@ body {
 		text-align: center;
 	}
 }
+
+.about-section .section-title {
+	color: #4e58e7;
+}
+.skill-section .section-title {
+	color: #f6ba28;
+}
