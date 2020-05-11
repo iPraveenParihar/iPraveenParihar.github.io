@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+  font-family: myFirstFont;
+  src: url(../font/Roboto-Regular.ttf);
+}
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -9,7 +12,7 @@ body {
 	background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.gradient-text {
+.gradient-text{
 	background:-webkit-linear-gradient(right, #ff416c 12%, #ff4b2b 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -91,7 +94,7 @@ body {
 }
 
 @media screen and (max-width: 430px) {
-	.about-section .section-title {
+	.about-section .section-body {
 		text-align: center;
 	}
 }
@@ -102,10 +105,9 @@ body {
 .skill-section .section-title {
 	color: #f6ba28;
 }
-
+/*
 .skill-section {
 	background: url("../images/Amin.jpg");
-	/*filter: grayscale(100%);*/
 	height: 100%;
 	width: 100%;
 	background-attachment: fixed;
@@ -114,21 +116,30 @@ body {
 	background-size: cover;
 	position: relative;
 }
+*/
 .project-section .section-title{
 	color:#1c7059;
 }
-.card {
+.project-section .card {
 	border-radius: 12px;
 	overflow: hidden;
 	color: #425066 !important;
 	width: 100%;
 }
 
-.card:hover {
+.project-section .card:hover {
 	background:-webkit-linear-gradient(right, #ff416c, #ff4b2b);
 	color: #fff !important;
 }
 
+.progress {
+	width: 100%;
+}
 .progress-bar {
 	background:-webkit-linear-gradient(right, #ff416c, #ff4b2b);
+}
+
+footer {
+	min-height: 100px;
+	background-color: black;
 }
