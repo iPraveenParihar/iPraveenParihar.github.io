@@ -17,6 +17,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.gradient-text-1{
+	background: #3264f5;
+	background: linear-gradient(to right, #3264f5 2%, #7202bb 82%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .custom-navbar {
 	background-color: #fff !important;
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
@@ -32,7 +38,7 @@ body {
 	padding-right: 20px;
 	letter-spacing: 1px;
 	font-weight: 500;
-	background-image: linear-gradient(to right, transparent 50%, #00c6ff 50%);
+	background-image: linear-gradient(to right, transparent 50%,  #ff4b2b 50%);
 	background-size: 200% 100%;
 	transition: background-position ease .5s;
 }
@@ -43,7 +49,8 @@ body {
 }
 
 .head {
-	background: url("../images/praveen.jpg");
+	background: linear-gradient(to right, #3264f5 2%, #7202bb 82%); 
+	/*background: url("../images/praveen.jpg");*/
 	/*filter: grayscale(100%);*/
 	height: 100%;
 	min-height: 650px;
@@ -105,7 +112,10 @@ body {
 .skill-section .section-title {
 	color: #f6ba28;
 }
-/*
+.project-section .section-title{
+	color:#1c7059;
+}
+
 .skill-section {
 	background: url("../images/Amin.jpg");
 	height: 100%;
@@ -116,7 +126,7 @@ body {
 	background-size: cover;
 	position: relative;
 }
-*/
+
 .project-section .section-title{
 	color:#1c7059;
 }
@@ -137,6 +147,23 @@ body {
 }
 .progress-bar {
 	background:-webkit-linear-gradient(right, #ff416c, #ff4b2b);
+}
+
+.card-subtitle-left {
+	float: left;
+	width: 50%;
+}
+.card-subtitle-right {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+
+@media screen and (max-width: 425px) {
+	.card-subtitle-right {
+		float: none;
+		text-align: left;
+	}
 }
 
 footer {
