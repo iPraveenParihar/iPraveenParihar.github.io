@@ -1,10 +1,10 @@
 @font-face {
-  font-family: myFirstFont;
+  font-family: Roboto;
   src: url(../font/Roboto-Regular.ttf);
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
+html, body {
+	font-family: 'Roboto';
 }
 
 .lawrencium {
@@ -23,50 +23,6 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.custom-navbar {
-	background-color: #fff !important;
-	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.custom-navbar .navbar-nav>.nav-item>.nav-link {
-	color: #000;
-	text-transform: uppercase;
-	font-size: 14px;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
-	padding-left: 20px;
-	padding-right: 20px;
-	letter-spacing: 1px;
-	font-weight: 500;
-	background-image: linear-gradient(to right, transparent 50%,  #ff4b2b 50%);
-	background-size: 200% 100%;
-	transition: background-position ease .5s;
-}
-
-.custom-navbar .navbar-nav>.nav-item>.nav-link:hover {
-	background-position: -100% 0;
-	color: #fff;
-}
-
-.head {
-	background: linear-gradient(to right, #3264f5 2%, #7202bb 82%); 
-	/*background: url("../images/praveen.jpg");*/
-	/*filter: grayscale(100%);*/
-	height: 100%;
-	min-height: 650px;
-	width: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-}
-
-@media screen and (max-width: 700px) {
-	.head {
-		min-height: 360px;
-	}
-}
 
 .section-title {
 	font-size: calc(30px + (60-30)*((100vw - 300px)/(1024-300)));
@@ -75,33 +31,17 @@ body {
 	font-size: calc(12px + (16-12)*((100vw - 300px)/(1024-300)));
 }
 
-
-.head .section-title {
-	position: absolute;
-	top: 20%;
-	left: 30px;
+.header-section {
+	background:-webkit-linear-gradient(right, #ff416c 12%, #ff4b2b 80%);
 	letter-spacing: 5px;
-	color: #fff;
-	background-image: linear-gradient(to right, transparent 50%, #fff 50%);
-	background-size: 200% 100%;
-	transition: background-position ease 0.5s;
+	min-height: 100%;
 }
 
-.head .section-body {
-	position: absolute;
-	letter-spacing: 5px;
-}
-
-@media screen and (min-width: 760px)
-{
-	.vertical-center {
-  		display: flex;
-  		align-items: center;
+@media screen and (max-width: 370px) {
+	.about-section .section-title {
+		text-align: center;
 	}
-}
-
-@media screen and (max-width: 430px) {
-	.about-section .section-body {
+	.about-section .section-body{
 		text-align: center;
 	}
 }
@@ -115,16 +55,17 @@ body {
 .project-section .section-title{
 	color:#1c7059;
 }
+.experience-section .section-title {
+	color: #3264f5;
+}
+.contact-section{
+	background-color: #000;
+}
 
 .skill-section {
-	background: url("../images/Amin.jpg");
-	height: 100%;
-	width: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+	background: #8E2DE2; 
+	background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+	background: linear-gradient(to right, #4A00E0, #8E2DE2); 
 }
 
 .project-section .section-title{
@@ -160,13 +101,13 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+	.card-subtitle-left {
+		width: 100%;
+	}
 	.card-subtitle-right {
+		width: 100%;
 		float: none;
 		text-align: left;
 	}
 }
 
-footer {
-	min-height: 100px;
-	background-color: black;
-}
