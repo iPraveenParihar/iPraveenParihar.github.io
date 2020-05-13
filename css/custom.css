@@ -11,7 +11,7 @@ html a{
 	color: #fff;
 }
 a:hover{
-	background:-webkit-linear-gradient(right, #ff416c 12%, #ff4b2b 80%);
+   background:-webkit-linear-gradient(right, #ff416c 12%, #ff4b2b 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -37,11 +37,34 @@ a:hover{
 	-webkit-text-fill-color: transparent;
 }
 
-.section-title {
-	font-size: calc(30px + (60-30)*((100vw - 300px)/(1024-300)));
+@media (min-width: 420px)
+{
+	.section-title {
+		font-size: 40px;
+	}
+	.section-body {
+		font-size: 16px;
+	}
 }
-.section-body {
-	font-size: calc(12px + (16-12)*((100vw - 300px)/(1024-300)));
+
+@media (min-width: 768px)
+{
+	.section-title {
+		font-size: 50px;
+	}
+	.section-body {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 992px)
+{
+	.section-title {
+		font-size: 70px;
+	}
+	.section-body {
+		font-size: 24px;
+	}
 }
 
 .header-section {
@@ -111,7 +134,10 @@ a:hover{
 	text-align: right;
 }
 
-@media screen and (max-width: 425px) {
+@media (min-width: 420px) {
+	.card-subtitle {
+		font-size: 16px;
+	}
 	.card-subtitle-left {
 		width: 100%;
 	}
