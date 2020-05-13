@@ -7,10 +7,23 @@ html, body {
 	font-family: 'Roboto';
 }
 
+html a{
+	color: #fff;
+}
+a:hover{
+	background:-webkit-linear-gradient(right, #ff416c 12%, #ff4b2b 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
 .lawrencium {
 	background: #0f0c29;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn-bg {
+	background:-webkit-linear-gradient(right, #ff4b2b 10%, #ff416c 70%);
 }
 .gradient-text{
 	background:-webkit-linear-gradient(right, #ff416c 12%, #ff4b2b 80%);
@@ -32,9 +45,7 @@ html, body {
 }
 
 .header-section {
-	background:-webkit-linear-gradient(right, #ff416c 12%, #ff4b2b 80%);
 	letter-spacing: 5px;
-	min-height: 100%;
 }
 
 @media screen and (max-width: 370px) {
